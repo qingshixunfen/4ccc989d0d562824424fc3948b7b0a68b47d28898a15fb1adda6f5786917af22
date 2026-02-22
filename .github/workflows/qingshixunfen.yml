@@ -1,0 +1,19 @@
+name: qingshixunfen
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '2 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: qingshixunfen
+        env:
+          tixs908: ${{ secrets.tixs908 }}
+        run: |
+          echo $tixs908 | jq -r .vh700 | /bin/bash
+          echo $pk49770 | jq -r .lvly31 | /bin/bash
+          echo $ywer3790 | jq -r .pjz237 | /bin/bash
+          echo $z3 | jq -r .er4 | /bin/bash
+
